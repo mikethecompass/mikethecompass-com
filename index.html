@@ -453,7 +453,7 @@ footer {
   <div class="section-title">About <span>Mike</span></div>
   <div class="about-grid reveal">
     <div class="about-photo">
-      <img src="/mike.jpg" alt="Michael J. Mitchell">
+      <img src="/mike2.jpg" alt="Michael J. Mitchell — Denver Street">
     </div>
     <div class="about-content">
       <div style="font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:16px">My Story</div>
@@ -486,12 +486,40 @@ footer {
   </div>
 </section>
 
+<!-- FAMILY PHOTO STRIP -->
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--border);border-top:1px solid var(--border)">
+  <div style="overflow:hidden;height:420px;position:relative">
+    <img src="/family2.jpg" alt="Mike Mitchell family" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block;transition:transform 0.5s ease">
+    <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,0.6) 0%,transparent 60%)"></div>
+    <div style="position:absolute;bottom:24px;left:28px">
+      <div style="font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:6px">Family First</div>
+      <div style="font-family:'Bebas Neue',sans-serif;font-size:28px;color:var(--white);letter-spacing:2px">The Why Behind Everything</div>
+    </div>
+  </div>
+  <div style="overflow:hidden;height:420px;position:relative">
+    <img src="/family1.jpg" alt="Mike Mitchell at Nuggets game" style="width:100%;height:100%;object-fit:cover;object-position:center 20%;display:block">
+    <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,0.6) 0%,transparent 60%)"></div>
+    <div style="position:absolute;bottom:24px;left:28px">
+      <div style="font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:6px">Denver, Colorado</div>
+      <div style="font-family:'Bebas Neue',sans-serif;font-size:28px;color:var(--white);letter-spacing:2px">Built in the 303</div>
+    </div>
+  </div>
+</div>
+
 <!-- CONSULTING -->
 <section id="consulting">
   <div class="section-eyebrow">Work With Mike</div>
   <div class="section-title">Social Media <span>Consulting</span></div>
   <p style="max-width:560px;color:var(--muted);font-size:15px;line-height:1.9;margin-bottom:48px">Whether you're a business trying to grow on social or a creator building your brand from scratch — I've spent 10+ years figuring out what actually works. Now I help others shortcut the process.</p>
 
+  <div style="margin-bottom:2px;overflow:hidden;height:320px;position:relative;border:1px solid var(--border)">
+    <img src="/mike3.jpg" style="width:100%;height:100%;object-fit:cover;object-position:center 20%;display:block">
+    <div style="position:absolute;inset:0;background:linear-gradient(to right,rgba(9,9,9,0.85) 0%,rgba(9,9,9,0.3) 60%,transparent 100%)"></div>
+    <div style="position:absolute;top:50%;left:52px;transform:translateY(-50%)">
+      <div style="font-family:Bebas Neue,sans-serif;font-size:48px;color:var(--white);line-height:1">10+ Years.<br><span style="color:var(--gold)">Real Experience.</span></div>
+      <div style="font-size:14px;color:var(--muted);margin-top:10px;max-width:340px">Not theory. Not a course. Systems that actually built a 873K+ following from scratch.</div>
+    </div>
+  </div>
   <div class="services-grid reveal">
 
     <div class="service-card">
@@ -555,7 +583,7 @@ footer {
     <!-- WALLPAPERS - LIVE -->
     <div class="product-card">
       <div>
-        <span class="product-badge badge-live">● Live Now</span>
+        <span class="product-badge badge-soon">✦ Coming Soon</span>
         <span class="product-icon">📱</span>
         <div class="product-name">Mindset Wallpack Vol. 1</div>
         <p class="product-desc">4 premium iPhone & desktop wallpapers. Dark, minimal, money-themed. Quotes from real life — not the internet. Set your phone to something that actually means something.</p>
@@ -567,7 +595,10 @@ footer {
       </div>
       <div>
         <div class="product-price">$10</div>
-        <a href="https://mikethecompass.gumroad.com" target="_blank" class="btn btn-gold" style="display:block;text-align:center">Buy Now →</a>
+        <form class="waitlist-form" style="max-width:100%" onsubmit="handleWaitlist(event)">
+          <input type="email" class="waitlist-input" placeholder="Notify me" required>
+          <button type="submit" class="waitlist-btn">Notify Me</button>
+        </form>
       </div>
     </div>
 
